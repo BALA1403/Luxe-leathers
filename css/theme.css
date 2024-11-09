@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------------- File Name: theme.css ---------------------------------------------------------------------*/
+
+/* ---------------------- Theme related variables ---------------------- */
+
+:root {
+  --primary-background-color: #FFD3AC;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-background-color: #0e1217;
+  }
+}
+
+.light-mode {
+  --primary-background-color: #FFD3AC;
+  --secondary-background-color: #CCBEB1;
+  --color-black: #0A0A0A;
+  --color-pink-dark: #474747;
+  --text-color: #212121;
+  --color-dark-1: #030305;
+  --color-dark-2: #212121;
+}
+
+.dark-mode {
+  --primary-background-color: #FFD3AC;
+  --secondary-background-color: #1c1f26;
+  --color-pink: #c94b68;
+  --color-pink-dark: #dc5f7c;
+  --text-color: #fff;
+  --color-dark-1: #FFFFFF;
+  --color-dark-2: #FFFFFF;
+}
+
+/* ---------------------- Theme related css ---------------------- */
+
+.dark-mode .bg-light {
+  background-color: var(--secondary-background-color) !important;
+}
